@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/235f508f3b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../style/login-style.css">
+    <link rel="icon" type="imagem/png" href="../images/icon.png" />
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form action="../../script/login.php" method="post" autocomplete="off" class="sign-in-form">
+                        <div class="logo">
+                            <img src="../images/icon.png " alt="Ícone">
+                        </div>
+                        <div class="heading">
+                            <h2>Bem vindo de volta!</h2>
+                            <h6>Ainda não se cadastrou?</h6>
+                            <a href="#" class="toggle">Cadastrar-se</a>
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="email" name="mail" minlength="4" class="input-field" autocomplete="off" required/>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="password" name="password" minlength="4" class="input-field" autocomplete="off" required/>
+                                <label>Senha</label>
+                            </div>
+
+                            <input type="submit" value="Entrar" class="sign-btn">
+                        </div>
+                    </form>
+
+                    <form action="../script/new-user.php" method="post" autocomplete="off" class="sign-up-form">
+                        <div class="logo">
+                            <img src="../images/icon.png " alt="Ícone">
+                        </div>
+                        <div class="heading">
+                            <h2>Cadastre-se</h2>
+                            <h6>Já tem uma conta?</h6>
+                            <a href="#" class="toggle">Entrar</a>
+                        </div>
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" name="username" minlength="4" class="input-field" autocomplete="off" required/>
+                                <label>Nome</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="email" name="email" minlength="4" class="input-field" autocomplete="off" required/>
+                                <label>Email</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="password" name="password" minlenght="4" maxlength="16" class="input-field" autocomplete="off" required/>
+                                <label>Senha</label>
+                            </div>
+
+                            <input type="submit" value="Cadastrar-se" class="sign-btn">
+                            <p class="text">
+                                Ao me cadastrar, eu concordo com os
+                                <a href="#">Termos de serviço</a> e a <a href="#">Política de Privacidade</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="../images/login.jpg" class="image img-1 show" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Javascript file-->
+    <script src = "../../script/login-animation.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
