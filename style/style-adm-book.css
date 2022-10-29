@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+@media (min-width: 1em) {
+
+body{
+    background-color: #F2E3D4;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #F2E3D4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box{
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 3rem;
+    box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
+}
+
+h3{
+font-size: 30px;
+font-weight: 600;
+margin-top: 5rem;
+margin-bottom: 5rem;
+color: #151111;
+text-align:center;
+}
+
+.container{
+    text-align: center;
+    margin-left: 110px;
+}
+.row{
+    text-align: center;
+    margin: 2rem 0 0 0;
+} 
+   
+
+.col-1{  
+    border-color: #fff ;
+   margin-left: 10px;
+}
+
+.col-6{  
+    padding: 0 0 0  200px;
+    border-color: #fff ;
+    border: 200px;
+}
+.arrumar{
+    margin: 0px 0 50px 0 ;
+}
+
+.arrumar2{
+    margin-left: 50px;
+}
+span{
+margin: 0px 20px;
+}
+
+
+.logo img {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+
+button {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+    width: 50px;
+    height: 35px;
+    background-color: #F2955E;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.2;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+ button:hover {
+  background-color: darkgrey;
+
+}
+
+header{
+    background-color: #fff;
+}
+
+header .nav-item{
+  font-size: 18px;
+  margin-top: 1.6rem;
+}
+
+header .nav-link {
+  font-weight: 600;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #000;
+  border-bottom: solid 4px transparent;
+}
+
+header .nav-link:hover {
+  border-bottom: solid 4px #F2955E;
+  color: #F2955E;
+
+}
+
+.navbar-brand {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 4rem;
+
+}
+
+.dropdown {
+  margin-top: 1rem;
+
+}
+
+.dropdown-item:hover {
+  background: #ffff;
+  color: #F2955E;
+}
+
+a {
+    font-size: small;
+    text-decoration: none;
+}
+
+.negrito {
+     color: #000;
+     font-weight: bold;
+     font-size: 20px;
+     }

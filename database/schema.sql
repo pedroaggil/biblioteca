@@ -24,6 +24,6 @@ CREATE TABLE tb_book (
     nm_reviewer VARCHAR(100),
     nr_isbn INT,
     ds_genre VARCHAR(100) NOT NULL,
-    st_availability INT NOT NULL,
+    st_availability CHAR(3) NOT NULL,
     il_image BLOB NOT NULL
 );

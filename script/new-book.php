@@ -14,7 +14,7 @@
     $isbn = $_POST['isbn'];
     $genre = $_POST['genre'];
     $image = $_POST['image'];
-    $availability = 1;
+    $availability = 'Sim';
 
     $insert = "INSERT INTO tb_book VALUES 
               (null, '". $title ."', '". $author ."', '". $publisher ."', '". $collection ."', '". $subtitle ."', , '". $synopsis ."', , '". $translator ."', '". $launch ."', '". $original__title ."', '". $date__translate ."', '". $reviewer ."', '". $isbn ."', '". $genre ."', '". $availability ."', '". $image ."')";
