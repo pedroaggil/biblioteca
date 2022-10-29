@@ -15,7 +15,7 @@ h1{
 
 main {
     width: 100%;
-    min-height: 100vh;
+    min-height: 50vh;
     overflow: hidden;
     background-color: #F2E3D4;
     margin: 0;
@@ -29,7 +29,7 @@ main {
     position: relative;
     width: 80%;
     max-width: 1200px;
-    height: 700px;
+    min-height: 500px;
     background-color: #fff;
     border-radius: 3rem;
     box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);

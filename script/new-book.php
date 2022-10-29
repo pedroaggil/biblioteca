@@ -19,8 +19,10 @@
     $insert = "INSERT INTO tb_book VALUES 
               (null, '". $title ."', '". $author ."', '". $publisher ."', '". $collection ."', '". $subtitle ."', , '". $synopsis ."', , '". $translator ."', '". $launch ."', '". $original__title ."', '". $date__translate ."', '". $reviewer ."', '". $isbn ."', '". $genre ."', '". $availability ."', '". $image ."')";
 
-    $res = $mysqli->query($insert);
-
-    header('Location: ../template/admin/index.php');
+    if ($res = $mysqli->query($insert)) {
+        header('Location: ../templates/admin/index.php');
+    } else {
+        echo $mysqli->error;
+    }
 
 ?>

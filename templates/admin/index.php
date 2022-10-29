@@ -32,7 +32,7 @@
 				<span class="negrito" style="margin: 0  0 400px 0;">Autor</span>
 			</div>
 			<div class="col-4 colunalink">
-				<a href='#'><img style='width: 30px; height: 30px; background-color:#F2955E; border-radius:3rem;' src='../../images/mais.png' alt='Alterar registro'></a></div>
+				<a href='new-book.html'><img style='width: 30px; height: 30px; background-color:#F2955E; border-radius:3rem;' src='../../images/mais.png' alt='Alterar registro'></a></div>
 			</div>
 		</div>
 	</div>
