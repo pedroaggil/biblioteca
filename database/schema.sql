@@ -20,10 +20,16 @@ CREATE TABLE tb_book (
     nm_translator VARCHAR(100),
     dt_launch VARCHAR(20) NOT NULL, -- it was supposed to be DATE, but ignore
     nm_original_title VARCHAR(100),
-    dt_translate_date DATE,
+    dt_translate_date VARCHAR(20),
     nm_reviewer VARCHAR(100),
-    nr_isbn INT,
+    nr_isbn VARCHAR(50),
     ds_genre VARCHAR(100) NOT NULL,
     st_availability CHAR(3) NOT NULL,
-    il_image BLOB NOT NULL
+    il_image BLOB
 );
+
+INSERT INTO tb_user VALUES
+    (null, 'Pedro Gil', 'pedroaggil@gmail.com', 'senhasegura', 1);
+
+INSERT INTO tb_book VALUES 
+    (null, 'O Nome do Vento', 'Patrick Rothfuss', 'Arqueiro', 'A Crônica do Matador do Rei', 'Primeiro Dia', 'Texto', 'Vera Ribeiro', '2007', 'The Name of the Wind', '2009', 'Anna Grillo et al', '9788599296493', 'Romance', 'Sim', null);

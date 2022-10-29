@@ -20,18 +20,18 @@
 	<div class="box">
 		<h3>Controle de Livros</h3>
 		<div class="arrumar">
-	<div class="container">
+	<div class="container" style="text-align: left">
 		<div class="row">
-			<div class="comunista col-3">
+			<div class="comunista col-1">
 				<span class="negrito">Título</span>
 			</div>
-			<div class="col-1">
+			<div class="col-3">
                 <span class="negrito">Disp.</span>
             </div>
-			<div class="col-4">
+			<div class="col-2">
 				<span class="negrito" style="margin: 0  0 400px 0;">Autor</span>
 			</div>
-			<div class="col-2 colunalink">
+			<div class="col-4 colunalink">
 				<a href='#'><img style='width: 30px; height: 30px; background-color:#F2955E; border-radius:3rem;' src='../../images/mais.png' alt='Alterar registro'></a></div>
 			</div>
 		</div>
