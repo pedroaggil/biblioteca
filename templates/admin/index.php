@@ -39,7 +39,8 @@
 		<?php include '../../database/database.php';
 
 				$search =  "SELECT *
-							FROM tb_book";
+							FROM tb_book
+                            ORDER BY nm_title";
 				$result = $mysqli->query($search);
 
 				while ($row = $result -> fetch_object()) {
@@ -60,7 +61,7 @@
 								<button><a href='../../script/delete-book.php?book=$row->id_book'><img style='width: 20px; height: 20px;' src='../../images/excluir.png' alt='Deletar registro'></a></button>
 							</div>
 							<div class='col-1'>
-								<button><a href='availability.php?book=$row->id_book'><img style='width: 20px; height: 20px;' src='../../images/editar.png' alt='Alterar registro'></a></button>
+								<button><a href='../../script/availability.php?book=$row->id_book'><img style='width: 20px; height: 20px;' src='../../images/editar.png' alt='Alterar registro'></a></button>
 							</div>
 						</div>
 					</div>

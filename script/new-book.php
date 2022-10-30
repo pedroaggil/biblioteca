@@ -17,9 +17,9 @@
     $availability = 'Sim';
 
     $insert = "INSERT INTO tb_book VALUES 
-              (null, '". $title ."', '". $author ."', '". $publisher ."', '". $collection ."', '". $subtitle ."', , '". $synopsis ."', , '". $translator ."', '". $launch ."', '". $original__title ."', '". $date__translate ."', '". $reviewer ."', '". $isbn ."', '". $genre ."', '". $availability ."', '". $image ."')";
+              (null, '". $title ."', '". $author ."', '". $publisher ."', '". $collection ."', '". $subtitle ."', '". $synopsis ."', '". $translator ."', '". $launch ."', '". $original__title ."', '". $date__translate ."', '". $reviewer ."', '". $isbn ."', '". $genre ."', '". $availability ."', '". $image ."')";
 
-    if ($res = $mysqli->query($insert)) {
+    if ($sql = $mysqli->query($insert)) {
         header('Location: ../templates/admin/index.php');
     } else {
         echo $mysqli->error;
