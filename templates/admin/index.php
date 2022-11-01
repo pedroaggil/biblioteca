@@ -32,8 +32,8 @@
 			<div class="col-2">
 				<span class="negrito" style="margin: 0  0 400px 0;">Autor</span>
 			</div>
-			<div class="col-4 colunalink">
-				<a href='new-book.html'><img style='width: 30px; height: 30px; background-color:#F2955E; border-radius:3rem;' src='../../images/mais.png' alt='Alterar registro'></a></div>
+			<div class="col-5 colunalink">
+				<a href='new-book.html'><img style='width: 30px; height: 30px; background-color:#F2955E; border-radius:3rem;' src='../../images/sum.png' alt='Adicionar livro'></a></div>
 			</div>
 		</div>
 	</div>
@@ -59,10 +59,13 @@
 							</div>
 						
 							<div class='col-1'>
-								<button><a href='../../script/delete-book.php?book=$row->id_book'><img style='width: 20px; height: 20px;' src='../../images/excluir.png' alt='Deletar registro'></a></button>
+								<button><a href='../../script/delete-book.php?book=$row->id_book'><img style='width: 20px; height: 20px;' src='../../images/delete.png' alt='Deletar livro'></a></button>
 							</div>
 							<div class='col-1'>
-								<button><a href='../../script/availability.php?book=$row->id_book'><img style='width: 20px; height: 20px;' src='../../images/editar.png' alt='Alterar registro'></a></button>
+								<button><a href='../../script/availability.php?book=$row->id_book'><img style='width: 20px; height: 20px;' src='../../images/availability.png' alt='Alterar disponibilidade'></a></button>
+							</div>
+							<div class='col-1'>
+								<button><a href='update-book.php?book=$row->id_book'><img style='width: 20px; height: 20px;' src='../../images/edit.png' alt='Alterar registro'></a></button>
 							</div>
 						</div>
 					</div>
