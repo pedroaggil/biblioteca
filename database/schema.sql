@@ -1,6 +1,12 @@
 CREATE DATABASE library;
 USE library;
 
+--- -----------------------------------------------------
+--- Two types of user:
+    -- Common: can access the book catalog and browse your products
+    -- Administrator: you can access all the project's features, such as registering a new book, updating your information, adding new administrators, etc.
+--------------------------------------------------------
+
 CREATE TABLE tb_user (
     id_user INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nm_name VARCHAR(100) NOT NULL,
@@ -8,6 +14,10 @@ CREATE TABLE tb_user (
     pw_password VARCHAR(16) NOT NULL,
     st_level INT NOT NULL
 );
+
+---------------------------------------------------------
+--- Table responsible for storing books in the system ---
+----------------------------------------------------- ---
 
 CREATE TABLE tb_book (
     id_book INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -22,7 +32,7 @@ CREATE TABLE tb_book (
     nm_original_title VARCHAR(100),
     dt_translate_date VARCHAR(20),
     nm_reviewer VARCHAR(100),
-    nr_isbn VARCHAR(50),
+    nr_isbn INT(13),
     ds_genre VARCHAR(100) NOT NULL,
     st_availability CHAR(3) NOT NULL,
     il_image BLOB

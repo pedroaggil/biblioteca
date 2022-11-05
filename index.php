@@ -6,9 +6,9 @@
 
     if (isset($_SESSION['lvl'])) {
         if ($_SESSION['lvl'] == 1) { // comum
-            header('Location: templates/index.html');
+            header('Location: templates/index.php');
         } elseif ($_SESSION['lvl'] == 2) { // admin
-            header('Location: templates/admin/index.html');
+            header('Location: templates/admin/index.php');
         }
     } else { // não logado
         header('Location: templates/sign/index.html');
