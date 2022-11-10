@@ -9,27 +9,23 @@
     $sql = $mysqli->query($search);
 
    if ($src__sql = $sql -> fetch_object()) {
-        $a = $src__sql->st_availability;
-        echo $a;
+        $new__availability;
         if ($src__sql->st_availability == 'Sim') {
-            $new__availability = 'Não';
-        } elseif ($src__sql->st_availability == 'Não') {
+            $new__availability = 'Nao';
+        } elseif ($src__sql->st_availability == 'Nao') {
             $new__availability = 'Sim';
         } else {
-            echo 'me diz o que te ofende amigo PORFAVOR';
+            echo $mysqli->error;
         }
     }
 
     $update =  "UPDATE tb_book 
                 SET st_availability = '".$new__availability."' 
                 WHERE id_book = ". $book;
-
-    echo $update;
-  
-    /* if ($upd__sql = $mysqli->query($update)) {
+    if ($upd__sql = $mysqli->query($update)) {
         header('Location: ../templates/admin/index.php');
     } else {
         echo $mysqli->error;
     }
-*/
+
 ?>
