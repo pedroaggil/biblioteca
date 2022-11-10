@@ -13,7 +13,7 @@
     $reviewer = $_POST['reviewer'];
     $isbn = $_POST['isbn'];
     $genre = $_POST['genre'];
-    $image = $_POST['image'];
+    $image = $_FILES['image'];
     $availability = 'Sim';
 
     $insert = "INSERT INTO tb_book VALUES 
