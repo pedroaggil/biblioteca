@@ -7,8 +7,8 @@
 
 	    $search =  "SELECT * 
 	                FROM tb_user 
-	    		    WHERE ds_email = '". $mail ."' AND ds_senha = '". $password ."'";
-
+	    		    WHERE ds_mail = '". $mail ."' AND pw_password = '". $password ."'";
+		echo $search;
 	    if ($sql = $mysqli->query($search)) {
 
 	        if ($sql->num_rows == 1) {
@@ -21,7 +21,7 @@
 					$_SESSION['level'] = $row->st_level;
 	    
 	                if ($_SESSION['level'] == 1) {
-                        header('Location: ../templates/index.php');
+                        header('Location: ../templates/index.html');
 
 	            	} else if ($_SESSION['level'] == 2) {
 	                	header('Location: ../templates/admin/index.php');
@@ -29,7 +29,7 @@
 	            }
 	        } else {
 				?><script> alert('Login e/ou senha inválidos, tente novamente'); </script><?php
-				header('Location: ../login/index.html');
+				header('Location: ../templates/sign/index.html');
 
 			}
 	    }
