@@ -41,7 +41,7 @@
 
 				$search =  "SELECT *
 							FROM tb_book
-                            ORDER BY nm_title";
+                            ORDER BY nm_title ASC";
 				$result = $mysqli->query($search);
 
 				while ($row = $result -> fetch_object()) {
