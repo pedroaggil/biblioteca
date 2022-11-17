@@ -1,5 +1,7 @@
 $().ready(function() {
 
+    // Define características do input[type=date]
+
     // SELECT
     $('select').material_select();
 

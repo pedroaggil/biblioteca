@@ -1,5 +1,7 @@
 <?php include('../database/database.php');
 
+    // Cadastra um novo livro no sistema a partir das especificações
+
     $title = $_POST['title'];
     $author = $_POST['author'];
     $publisher = $_POST['publisher'];

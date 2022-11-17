@@ -1,5 +1,13 @@
 <?php include('../database/database.php');
 
+    /*
+     * Altera o status de disponibilidade de determinado livro
+     * Lógica: 
+        *  Se o status for 'Disponível' ("Sim"), altera para 'Indisponível' ("Nao");
+        * Senão, altere de 'Nao' para 'Sim'.
+     * Para isso, é selecionado o objeto a ser manipulado a partir de especificação de ID, e altera em seguida com base na inteligência definida
+     */
+
     $book = $_GET['book'];
 
     $search =  "SELECT *

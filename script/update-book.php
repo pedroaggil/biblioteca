@@ -1,4 +1,6 @@
 <?php include('../database/database.php');
+
+    // Atualiza as informações do livro especificado
    
     $book = $_GET['book'];
 

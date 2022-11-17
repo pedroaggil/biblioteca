@@ -1,5 +1,13 @@
 <?php include('../database/database.php');
 
+	/*
+	 * Executa o login do usuário especificado a partir de suas credenciais
+	 	* Verifica se as credenciais são válidas
+			* Só existe uma conta com tais credenciais
+			* A conta com estas credenciais existe
+		* Salva as credenciais na sessão
+	 */
+
 	if (isset($_POST['mail'])) {
 
 	    $mail = $_POST['mail'];
@@ -18,15 +26,10 @@
 					$_SESSION['id'] = $row->id_user;
 					$_SESSION['username'] = $row->nm_name;
 					$_SESSION['mail'] = $row->ds_mail;
-					$_SESSION['level'] = $row->st_level;
 	    
-	                if ($_SESSION['level'] == 1) {
-                        header('Location: ../templates/index.html');
-
-	            	} else if ($_SESSION['level'] == 2) {
-	                	header('Location: ../templates/admin/index.php');
-					}
+	                header('Location: ../templates/admin/index.php');
 	            }
+				
 	        } else {
 				?><script> alert('Login e/ou senha inválidos, tente novamente'); </script><?php
 				header('Location: ../templates/sign/index.html');

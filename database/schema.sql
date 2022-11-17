@@ -9,8 +9,7 @@ CREATE TABLE tb_user (
     id_user INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     nm_name VARCHAR(100) NOT NULL,
     ds_mail VARCHAR(150) NOT NULL,
-    pw_password VARCHAR(16) NOT NULL,
-    st_level INT NOT NULL
+    pw_password VARCHAR(16) NOT NULL
 );
 
 -- Table responsible for storing books in the system

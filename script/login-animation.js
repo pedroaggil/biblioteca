@@ -1,3 +1,6 @@
+
+// Anima a tela de login
+
 const inputs = document.querySelectorAll(".input-field");
 const toggle_btn = document.querySelectorAll(".toggle");
 const main = document.querySelector("main");
