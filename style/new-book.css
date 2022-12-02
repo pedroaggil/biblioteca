@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
-@media (min-width: 1em) {
+@media (min-width: 1em) {}
 
 body, html{
   margin: 0;
@@ -71,6 +71,8 @@ label {
 
 }
 
+input { width: 34vw; }
+
 select {
   appearance: none;
   -webkit-appearance: none;
@@ -90,6 +92,7 @@ textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 10px;
+  min-height: 20px;
   height: auto;
   width: 34vw;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem; 
@@ -149,5 +152,4 @@ input[type=number] {
 
 span{
   margin-left: 44rem;
-
 }

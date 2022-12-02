@@ -25,12 +25,15 @@ main {
 
 }
 
+none { display: none; }
+
 .box {
     position: relative;
     padding: 2%;
     width: 80%;
     max-width: 1200px;
     min-height: 500px;
+    height: auto;
     margin-top: 5vh;
     background-color: #fff;
     border-radius: 3rem;

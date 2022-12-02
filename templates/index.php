@@ -104,12 +104,14 @@
 
                                         <?php
                                             // Substituir espaços por '%20' (código para o caractere) para sua aceitação em URLs
-                                            $nameBook = str_replace(' ', '%20', $sql['nm_title']);
-                                            $text = "Estou%20interessado%20em%20tomar%20emprestado%20o%20livro%20".$nameBook;
-                                            echo '<a href="https://wa.me/5513996895339?text='.$text.'" target="_blank" aria-label="Chat on WhatsApp"><img src="../images/ChatOnWhatsAppButton/WhatsAppButtonGreenSmall.png" alt="Chat on WhatsApp"></a>';
+                                            $book = $sql['nm_title'];
+                                            // $nameBook = str_replace(' ', '%20', $book);
+                                            $text = "Estou%20interessado%20em%20tomar%20emprestado%20o%20livro%20".str_replace(' ', '%20', $book);
                                         ?>
 
-                                        <div id="full-description"><h1>HELLO WORD FILHO DA PUTA</h1></div>
+                                        <a href="https://wa.me/5513996895339?text=<?php echo $text; ?>" target="_blank" aria-label="Chat on WhatsApp"><img src="../images/ChatOnWhatsAppButton/WhatsAppButtonGreenSmall.png" alt="Chat on WhatsApp"></a>
+
+                                        <div class="none" id="full-description"><h1>HELLO WORD FILHO DA PUTA</h1></div>
                                     </div>
                                 </div>
                             </div>
